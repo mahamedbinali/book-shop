@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,8 +8,14 @@
         <title>
             {% block title %} Book Shop {% endblock title %}
         </title>
+
+        <link rel="stylesheet" href="{% static 'css/tailwind.css' %}" />
+        <script src="{% static 'js/htmx.js' %}"></script>
+        <script src="{% static 'js/alpine.js' %}" defer></script>
     </head>
     <body>
         {% block content %}{% endblock content %}
+
+        <script src="{% static 'js/preline.js' %}" defer></script>
     </body>
 </html>
