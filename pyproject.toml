@@ -10,3 +10,12 @@ include_trailing_comma = true
 line_length = 88
 multi_line_output = 3
 known_first_party = ["config"]
+
+[tool.djlint]
+profile = "django"
+ignore = "H014"
+blank_line_after_tag = "load,extends,include"
+blank_line_before_tag = "load,extends,include"
+close_void_tags = true
+use_gitignore = true
+max_blank_lines = 2

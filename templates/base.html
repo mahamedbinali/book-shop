@@ -5,8 +5,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="..." />
+        <meta name="description" content="..." />
         <title>
-            {% block title %} Book Shop {% endblock title %}
+            {% block title %}
+                Book Shop
+            {% endblock title %}
         </title>
 
         <link rel="stylesheet" href="{% static 'css/tailwind.css' %}" />
@@ -14,7 +18,9 @@
         <script src="{% static 'js/alpine.js' %}" defer></script>
     </head>
     <body>
-        {% block content %}{% endblock content %}
+        {% block content %}
+        {% endblock content %}
+
 
         <script src="{% static 'js/preline.js' %}" defer></script>
     </body>
