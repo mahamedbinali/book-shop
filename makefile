@@ -1,8 +1,8 @@
-run: 
+run:
 	python manage.py runserver
-make: 
+make:
 	python manage.py makemigrations
-mig: 
+mig:
 	python manage.py migrate
 super:
 	python manage.py createsuperuser
@@ -19,9 +19,9 @@ installs:
 
 base:
 	pip-compile --generate-hashes requirements/base.in
-dev:		
+dev:
 	pip-compile --generate-hashes requirements/dev.in
-sync:	
+sync:
 	pip-sync requirements/base.txt requirements/dev.txt
 
 tw:
